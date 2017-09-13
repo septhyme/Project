@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/xszc"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/xszctv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/xszctv1"
+            android:layout_below="@+id/xszctv1"
+            android:layout_marginTop="19dp"
+            android:text="学号："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/xszctv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="41dp"
+            android:text="姓名："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.example.beta2.ClearEditText
+            android:id="@+id/xszc_cET1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xszctv1"
+            android:layout_alignBottom="@+id/xszctv1"
+            android:layout_toRightOf="@+id/xszctv1"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:ems="10"
+            android:hint="输入用户名" >
+
+            <requestFocus />
+        </com.example.beta2.ClearEditText>
+
+        <com.example.beta2.ClearEditText
+            android:id="@+id/xszc_cET2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xszctv2"
+            android:layout_alignBottom="@+id/xszctv2"
+            android:layout_alignLeft="@+id/xszc_cET1"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:ems="10"
+            android:hint="输入您的学号"
+            android:phoneNumber="true" />
+
+        <com.example.beta2.ClearEditText
+            android:id="@+id/s_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/xszc_cET2"
+            android:layout_alignTop="@+id/textView1"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:ems="10"
+            android:hint="输入您的密码"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/xszcbt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/xszctv4"
+            android:layout_marginBottom="30dp"
+            android:text="提交注册" />
+
+        <TextView
+            android:id="@+id/xszctv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xszcbt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:hint="(请允许自动获取)"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/xszctv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xszctv5"
+            android:layout_alignLeft="@+id/xszctv3"
+            android:text="手机串码:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.example.beta2.ClearEditText
+            android:id="@+id/xszc_cET3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xszctv4"
+            android:layout_alignLeft="@+id/s_pwd"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:ems="10"
+            android:hint="请输入手机号码"
+            android:phoneNumber="true" />
+
+        <TextView
+            android:id="@+id/xszctv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xszc_cET3"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="常用手机号:(谨慎填写)"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/xszctv2"
+            android:layout_below="@+id/xszc_cET2"
+            android:layout_marginTop="24dp"
+            android:text="密码："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.example.beta2.ClearEditText
+            android:id="@+id/s_pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/s_pwd"
+             android:background="@drawable/login_edittext_bg"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawableRight="@drawable/delete_selector"
+            android:ems="10"
+            android:hint="再次确认密码"
+            android:password="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_pwd"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/s_pwd1"
+            android:text="密码："
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+        </LinearLayout>
+

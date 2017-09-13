@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xsdl_qd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/xsdltv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/xsdltv1"
+        android:layout_alignBottom="@+id/xsdltv1"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/xsdltv1"
+        android:text="同学"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/xsdltv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/xsdltv2"
+        android:layout_alignBottom="@+id/xsdltv2"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/xsdltv2"
+        android:text="11071262"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/xsdltv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="39dp"
+        android:text="XXX"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xsdltv5"
+        android:layout_alignRight="@+id/xsdltv3"
+        android:layout_below="@+id/xsdltv5"
+        android:layout_marginTop="17dp"
+        android:text="您的位置信息为："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/xsdltv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xsdltv1"
+        android:layout_below="@+id/xsdltv2"
+        android:layout_marginTop="16dp"
+        android:text="欢迎登陆定位系统"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/sxbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/qdbutton"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/xsdltv3"
+        android:text="刷新" />
+
+    <Button
+        android:id="@+id/qdbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/sxbutton"
+        android:layout_marginTop="23dp"
+        android:text="签到" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:text="您有签到权限的课程为："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wzxx"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/wzxx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="请先打开GPS" />
+
+    <TextView
+        android:id="@+id/wzxx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/wzxx3"
+        android:layout_below="@+id/wzxx3"
+        android:text="请信任本软件" />
+
+</RelativeLayout>

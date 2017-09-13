@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_search" 
+        android:actionViewClass="android.widget.SearchView" 
+        android:showAsAction="always" 
+        android:title="@string/ss">
+        
+    </item><item android:id="@string/sdml"
+        android:showAsAction="always"
+        android:icon="@drawable/sdml">
+        <menu>
+          <group android:id="@+id/group1">
+                <item android:id="@+id/gl1" android:title="@string/gl1" />
+                <item android:id="@+id/gl2" android:title="@string/gl2" />
+                <item android:id="@+id/gl3" android:title="@string/gl3" />
+    		</group><item
+        android:id="@+id/sz"
+       	android:title="@string/action_settings">
+   		</item>
+   
+    		<item android:id="@+id/tc" 
+        	android:title="@string/tc">
+        
+    		</item>
+    		
+    	
+        </menu>
+    </item>
+    
+    
+
+</menu>

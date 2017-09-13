@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">中南民族大学签到定位系统</string>
+     <string name="action_settings">设置</string>
+      <string name="jishi">计时</string>
+      <string name="tc">退出</string>
+      <string name="share">分享</string>
+      <string name="ss">Search</string>
+      <string name="gl">管理</string>
+      <string name="gl1">查询签到编号</string>
+      <string name="gl2">查询一周内</string>
+    <string name="gl3">查询一个月内</string>
+     <string name="help">帮助</string>	
+    <string name="sdml">sd</string>	
+</resources>

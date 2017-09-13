@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jszc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/jszctv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:text="教师号:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/jszctv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszctv1"
+        android:layout_below="@+id/jszctv1"
+        android:layout_marginTop="19dp"
+        android:text="密码:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.example.beta2.ClearEditText
+        android:id="@+id/jszc_cet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jszctv2"
+        android:layout_toRightOf="@+id/jszctv1"
+        android:ems="10"
+        android:hint="请输入您的教工号"
+        android:inputType="phone" 
+        android:background="@drawable/login_edittext_bg"
+             android:drawableLeft="@drawable/icon_user"
+             android:drawableRight="@drawable/delete_selector"/>
+
+    <com.example.beta2.ClearEditText
+        android:id="@+id/jszc_cet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/jszctv2"
+        android:layout_toRightOf="@+id/jszctv1"
+        android:ems="10"
+        android:hint="初次输入您的密码"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/account_icon"
+        android:drawableRight="@drawable/delete_selector"
+        
+        android:inputType="textPassword" />
+
+    <com.example.beta2.ClearEditText
+        android:id="@+id/jszc_cet3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszc_cet2"
+        android:layout_below="@+id/jszc_cet2"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/account_icon"
+        android:drawableRight="@drawable/delete_selector"
+        android:ems="10"
+        android:hint="再次输入您的密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/jszctv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszctv2"
+        android:layout_below="@+id/jszc_cet3"
+        android:layout_marginTop="14dp"
+        android:text="输入常用手机号:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/jszcbt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszctv4"
+        android:layout_alignRight="@+id/jszctv4"
+        android:layout_below="@+id/jszctv4"
+        android:layout_marginTop="46dp"
+        android:text="注册" />
+
+    <com.example.beta2.ClearEditText
+        android:id="@+id/jszc_cet4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszc_cet3"
+        android:layout_below="@+id/jszctv4"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawableRight="@drawable/delete_selector"
+        android:ems="10"
+        android:hint="输入您的手机号码"
+        android:phoneNumber="true" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jszctv1"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:text="姓名" />
+
+    <com.example.beta2.ClearEditText
+        android:id="@+id/jszc_cet5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/jszctv1"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawableRight="@drawable/delete_selector"
+        android:ems="10"
+        android:hint="请输入您的姓名" />
+
+</RelativeLayout>

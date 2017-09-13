@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jsdl_qd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="41dp"
+        android:text="终止签到" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="开始签到" />
+
+    <TextView
+        android:id="@+id/jsdltv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:text="老师您好"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/jsdltv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jsdltv3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:text="11111"
+        android:textSize="30dp" />
+
+</RelativeLayout>

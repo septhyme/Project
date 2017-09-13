@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mihu.wificar"
+    android:versionCode="1"
+    android:versionName="1.0.6" >
+
+    <application
+        android:icon="@drawable/mainlogo"
+        android:label="wifi控制程序"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.mihu.wificar.WelcomeActivity"
+            android:label="wifi控制程序"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mihu.wificar.ContorlActivity"
+            android:label="WIFIROBOTS"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.mihu.wificar.ConfigSetting"
+            android:label="WIFIROBOTS"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.mihu.wificar.LightControl"
+            android:label="@string/lightcontrol"
+            android:theme="@android:style/Theme.Dialog" />
+    </application>
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="adnroid.permission.CHANGE_WIFI_STATE" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+
+</manifest>

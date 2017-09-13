@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="auther">SCUEC</string>
+    <string name="appname">智能无线通信实验室</string>
+    <string name="sensor">重力感应</string>
+    <string name="gears">语音控制</string>
+    <string name="connectfail">下位机无法找到！请确认下位机地址与串口转发程序是否正常。</string>
+    <string name="sendfail">请检查端口是否正确，下位机是否正常运行。</string>
+    <string name="website">万琛 刘英蔚 指导老师：李成华 </string>
+    <string name="exitinfo">再按一次后退键退出WIFIRobot控制端。</string>
+    <string name="forward">前</string>
+    <string name="backward">后</string>
+    <string name="leftward">左</string>
+    <string name="rightward">右</string>
+    <string name="stop">停</string>
+    <string name="videourl">视频地址</string>
+    <string name="controlurl">控制地址</string>
+    <string name="port">控制端口</string>
+    <string name="displaymode">显示模式</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="leftspeed">左侧速度</string>
+    <string name="rightspeed">右侧速度</string>
+    <string name="speedadjust">速度调整</string>
+    <string name="pwm">其他功能</string>
+    <string name="param">显示信息</string>
+    <string name="light">开关灯</string>
+    <string name="light1open">1号灯开</string>
+    <string name="light2open">2号灯开</string>
+    <string name="light3open">3号灯开</string>
+    <string name="light4open">4号灯开</string>
+    <string name="light1close">1号灯关</string>
+    <string name="light2close">2号灯关</string>
+    <string name="light3close">3号灯关</string>
+    <string name="light4close">4号灯关</string>
+    <string name="lightcontrol">车灯控制</string>
+    <string name="systemsetting">系统设置</string>
+    <string name="quit">退出</string>
+    <string name="quitconfirm">再按一次后退键退出WIFIRobot控制端</string>
+    <string name="wifi_closed">WIFI未打开，请先打开WIFI，并连上wifi-robots.com热点</string>
+    <string name="wifi_opened">WIFI已打开</string>
+    <string name="engine_init_fail">引擎初始化失败！</string>
+    <string name="engine_init_success">引擎初始化成功！</string>
+    <string name="sreen_gear">触屏云台</string>
+    <string name="sreen_gear_on">启用</string>
+    <string name="sreen_gear_off">关闭</string>
+    <string name="setting_notice">温馨提示：设置界面可以上下滑动</string>
+
+</resources>

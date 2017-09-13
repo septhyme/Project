@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/js"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    
+
+    <TextView
+        style="@style/logoText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mrd1"
+        android:layout_alignParentLeft="true"
+        android:text="欢迎你"
+        android:textColor="@color/black" />
+
+  
+
+         <Button
+             android:id="@+id/mbt1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/mcb1"
+             android:layout_alignRight="@+id/mcb1"
+             android:layout_below="@+id/met2"
+             android:layout_marginTop="96dp"
+             android:background="@drawable/login_button_bg"
+             android:text="登录"
+             android:textColor="@android:color/white"
+             android:textSize="18sp" />
+
+         <CheckBox
+             android:id="@+id/mcb1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/met1"
+             android:layout_centerHorizontal="true"
+             android:checked="false"
+             android:text="记住学号"
+             android:textColor="@color/black" />
+
+         <com.example.beta2.ClearEditText
+             android:id="@+id/met1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/met2"
+             android:layout_below="@+id/met2"
+             android:layout_marginTop="18dp"
+             android:background="@drawable/login_edittext_bg"
+             android:drawableLeft="@drawable/account_icon"
+             android:drawableRight="@drawable/delete_selector"
+             android:ems="10"
+             android:hint="请输入密码"
+             android:password="true"
+             android:singleLine="true" />
+
+         <com.example.beta2.ClearEditText
+             android:id="@+id/met2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/mrd1"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="18dp"
+             android:background="@drawable/login_edittext_bg"
+             android:drawableLeft="@drawable/icon_user"
+             android:drawableRight="@drawable/delete_selector"
+             android:ems="10"
+             android:hint="请输入教工号"
+             android:phoneNumber="true"
+             android:singleLine="true" />
+
+         <Button
+             android:id="@+id/mbt2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/mbt1"
+             android:layout_alignRight="@+id/mbt1"
+             android:layout_below="@+id/mbt1"
+             android:layout_marginTop="17dp"
+             android:background="@drawable/login_button_bg"
+             android:text="立即注册"
+             android:textColor="@android:color/white"
+             android:textSize="18sp" />
+         
+</RelativeLayout>
