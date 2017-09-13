@@ -1,0 +1,4 @@
+This is an Android application which can contron some intelligent car wirelessly.
+Same LAN is needed when connect the car using this application.
+The available IP address and ports on the car can be typed on the app's setting page.
+This app can show the real time image or vedio from the car's camera and control the car using buttons on the app.
