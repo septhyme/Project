@@ -1,6 +1,7 @@
 
 .DS_Store
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 Android Check In/.DS_Store
 ARIMA algorithm/.DS_Store
@@ -8,5 +9,7 @@ ARIMA algorithm/.DS_Store
 WifiCar_app/.DS_Store
 AI/.DS_Store
 BigData/.DS_Store
+=======
+>>>>>>> bc427d1f99aaed7990c8a2c1a3e13a475bd7dc76
 =======
 >>>>>>> bc427d1f99aaed7990c8a2c1a3e13a475bd7dc76
