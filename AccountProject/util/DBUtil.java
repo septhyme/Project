@@ -5,12 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
  
 public class DBUtil {
-    static String ip = "ip";
+    static String ip = "1111111";
     static int port = 3306;
-    static String database = "bill";
+    static String database = "11111";
     static String encoding = "UTF-8";
     static String loginName = "root";
-    static String password = "password";
+    static String password = "11111";
     static{
         try {
             Class.forName("com.mysql.jdbc.Driver");
