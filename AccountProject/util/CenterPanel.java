@@ -8,6 +8,8 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import gui.panel.WorkingPanel;
+
 public class CenterPanel extends JPanel{
 	private double rate;
 	private JComponent c;
@@ -43,6 +45,8 @@ public class CenterPanel extends JPanel{
 				remove(c);
 			}
 			add(p);
+			if (p instanceof WorkingPanel)
+				((WorkingPanel) p).updateData();
 			this.updateUI();
 			
 	}

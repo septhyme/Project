@@ -29,13 +29,13 @@ public class MainPanel extends JPanel {
 
 	private MainPanel() {
 
-		GUIUtil.setImageIcon(bSpend, "home.png", "消费一览");
-		GUIUtil.setImageIcon(bRecord, "record.png", "记一笔");
-		GUIUtil.setImageIcon(bCategory, "category2.png", "消费分类");
-		GUIUtil.setImageIcon(bReport, "report.png", "月消费报表");
-		GUIUtil.setImageIcon(bConfig, "config.png", "设置");
-		GUIUtil.setImageIcon(bBackup, "backup.png", "备份");
-		GUIUtil.setImageIcon(bRecover, "restore.png", "恢复");
+		GUIUtil.setImageIcon(bSpend, "home.png", "cost");
+		GUIUtil.setImageIcon(bRecord, "record.png", "add");
+		GUIUtil.setImageIcon(bCategory, "category2.png", "cost class");
+		GUIUtil.setImageIcon(bReport, "report.png", "cost chart");
+		GUIUtil.setImageIcon(bConfig, "config.png", "setting");
+		GUIUtil.setImageIcon(bBackup, "backup.png", "backup");
+		GUIUtil.setImageIcon(bRecover, "restore.png", "recover");
 
 		tb.add(bSpend);
 		tb.add(bRecord);

@@ -12,29 +12,32 @@ import javax.swing.JTextField;
 
 import org.jdesktop.swingx.JXDatePicker;
 
+import entity.Category;
+import gui.listener.RecordListener;
 import gui.model.CategoryComboBoxModel;
+import service.CategoryService;
 import util.ColorUtil;
 import util.GUIUtil;
 
-public class RecordPanel extends JPanel{
+public class RecordPanel extends WorkingPanel {
 	static{
 		GUIUtil.useLNF();
 	}
 	public static RecordPanel instance = new RecordPanel();
 
-	JLabel lSpend = new JLabel("花费(￥)");
-	JLabel lCategory = new JLabel("分类");
-	JLabel lComment = new JLabel("备注");
-	JLabel lDate = new JLabel("日期");
+	JLabel lSpend = new JLabel("cost");
+	JLabel lCategory = new JLabel("class");
+	JLabel lComment = new JLabel("comment");
+	JLabel lDate = new JLabel("date");
 
 	public JTextField tfSpend = new JTextField("0");
 
 	public CategoryComboBoxModel cbModel = new CategoryComboBoxModel();
-	public JComboBox<String> cbCategory = new JComboBox<>(cbModel);
+	public JComboBox<Category> cbCategory = new JComboBox<>(cbModel);
 	public JTextField tfComment = new JTextField();
 	public JXDatePicker datepick = new JXDatePicker(new Date());
 	
-	JButton bSubmit = new JButton("记一笔");
+	JButton bSubmit = new JButton("add");
 
 	public RecordPanel() {
 		GUIUtil.setColor(ColorUtil.grayColor, lSpend,lCategory,lComment,lDate);
@@ -58,10 +61,39 @@ public class RecordPanel extends JPanel{
 		this.setLayout(new BorderLayout());
 		this.add(pInput,BorderLayout.NORTH);
 		this.add(pSubmit,BorderLayout.CENTER);
+		
+		addListener();
 	}
 
 	public static void main(String[] args) {
 		GUIUtil.showPanel(RecordPanel.instance);
 	}
+
+	public Category getSelectedCategory(){
+		return (Category) cbCategory.getSelectedItem();
+	}
+
+	@Override
+	public void updateData() {
+		cbModel.cs = new CategoryService().list();
+		cbCategory.updateUI();
+		resetInput();
+		tfSpend.grabFocus();
+	}
 	
+	public void resetInput(){
+		tfSpend.setText("0");
+		tfComment.setText("");
+		if(0!=cbModel.cs.size())
+			cbCategory.setSelectedIndex(0);
+		datepick.setDate(new Date());
+	}	
+
+	@Override
+	public void addListener() {
+		// TODO Auto-generated method stub
+		RecordListener listener = new RecordListener();
+		bSubmit.addActionListener(listener);
+	}
+
 }

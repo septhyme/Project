@@ -8,10 +8,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import gui.listener.ConfigListener;
+import service.ConfigService;
 import util.ColorUtil;
 import util.GUIUtil;
 
-public class ConfigPanel extends JPanel{
+public class ConfigPanel extends WorkingPanel{
 	static{
 		GUIUtil.useLNF();
 	}
@@ -40,11 +42,26 @@ public class ConfigPanel extends JPanel{
 		this.add(pInput,BorderLayout.NORTH);
 		
 		pSubmit.add(bSubmit);
+		this.setLayout(new BorderLayout());
+		this.add(pInput, BorderLayout.NORTH);
 		this.add(pSubmit,BorderLayout.CENTER);
 		
+		addListener();
 		
 		
 	}
+	 public void addListener() {
+	        ConfigListener l =new ConfigListener();
+	        bSubmit.addActionListener(l);
+	    }
+	 public void updateData() {
+		 String budget = new ConfigService().get(ConfigService.budget);
+		 String mysqlpath = new ConfigService().get(ConfigService.mysqlPath);
+		 tfBudget.setText(budget);
+		 tfMysql.setText(mysqlpath);
+		 tfBudget.grabFocus();
+		 
+	 }
 	public static void main(String[] args) {
 		GUIUtil.showPanel(ConfigPanel.instance);
 	}
