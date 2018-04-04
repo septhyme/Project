@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-#box,#box2,#box3,#box4{padding:10px;border:1px solid green;} 
+#box,#box2{padding:10px;border:1px solid black;} 
 </style>
 <script type="text/javascript">
 function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
@@ -28,20 +28,12 @@ if(targetObj.style.display!="none"){
 <title>untitle</title>
 </head>
 <body>
-<p><a href="###" onclick="openShutManager(this,'box')">+</a></p>
+<p><a href="###" onclick="openShutManager(this,'box',false,'-','+')">+</a></p>
 <p id="box" style="display:none">
-   something
+    something
 </p>
-<p><a href="###" onclick="openShutManager(this,'box2',true)">+</a></p>
+<p><button onclick="openShutManager(this,'box2',false,'-','+')">+</button></p>
 <p id="box2" style="display:none">
-    something
-</p>
-<p><a href="###" onclick="openShutManager(this,'box3',false,'-','+')">+</a></p>
-<p id="box3" style="display:none">
-    something
-</p>
-<p><button onclick="openShutManager(this,'box4',false,'-','+')">+</button></p>
-<p id="box4" style="display:none">
    something
 </p>
 </body>
